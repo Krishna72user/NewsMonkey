@@ -1,10 +1,7 @@
-import { Component } from "react"
-export default class About extends Component{
 
-    render(){
-        let{style}=this.props
-        return (
-            <>
+export default function About ({style}){
+     return (
+        <>
         <div style={style.color === 'black' ? { backgroundColor: 'white',color:'black' } : style} className="h-screen">
             <div className="container mx-auto px-4 py-8 max-w-2xl">
                 <div style={style.color === 'black' ?{ backgroundColor: 'black',color:'white' } : {backgroundColor:'white',color:'black'}}  className={style.color==='black'?"shadow-gray-400 shadow-md mt-20 rounded-lg p-6":"shadow-gray-400 shadow-lg mt-20 rounded-lg p-6"} >
@@ -43,7 +40,6 @@ export default class About extends Component{
                 </div>
             </div>
         </div>
-  </>
-        )
-    }
+    </>
+    )
 }

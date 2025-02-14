@@ -1,11 +1,4 @@
-import { Component } from "react"
-
-export default class NewsItem extends Component{
-    constructor(){
-        super();
-    }
-    render(){
-        let {imgUrl,title,desc,url,itemSt,auth,time}=this.props;
+export default function NewsItem ({imgUrl,title,desc,url,itemSt,auth,time}){
         return(
             <>
                 <div style={itemSt} className="flex flex-col pb-7 w-[20em] justify-center items-center gap-5 rounded-2xl">
@@ -19,5 +12,4 @@ export default class NewsItem extends Component{
                 </div>
             </>
         )
-    }
 }
